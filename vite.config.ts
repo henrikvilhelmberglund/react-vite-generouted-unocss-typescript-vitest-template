@@ -10,15 +10,16 @@ export default defineConfig({
   plugins: [
     UnoCSS(),
     react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }),
-    generouted({
-      source: {
-        routes: [
-          "./src/pages/**/[\\w[-]*.{jsx,tsx}",
-          "!./src/pages/**/[\\w[-]*.test.{jsx,tsx}",
-        ],
-        modals: "",
-      },
-    }),
+    generouted(),
+    //   {
+    //   source: {
+    //     routes: [
+    //       "./src/pages/**/[\\w[-]*.{jsx,tsx}",
+    //       "!./src/pages/**/[\\w[-]*.test.{jsx,tsx}",
+    //     ],
+    //     modals: "",
+    //   },
+    // }
   ],
   test: {
     include: ["src/**/*.{test,spec}.{js,ts}"],
