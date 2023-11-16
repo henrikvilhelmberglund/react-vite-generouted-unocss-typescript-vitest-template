@@ -4,6 +4,11 @@
   },
   "types": [
     {
+      "type": "test",
+      "section": "Tests",
+      "hidden": false
+    },
+    {
       "type": "feat",
       "section": "Features:"
     },
@@ -23,18 +28,16 @@
     },
     {
       "type": "style",
-      "hidden": false
+      "hidden": true
     },
     {
       "type": "refactor",
+      "section": "Refactor",
       "hidden": false
     },
     {
       "type": "perf",
-      "hidden": false
-    },
-    {
-      "type": "test",
+      "section": "Performance",
       "hidden": false
     }
   ]
