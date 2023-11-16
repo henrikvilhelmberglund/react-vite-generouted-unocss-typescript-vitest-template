@@ -16,7 +16,6 @@
 		"release": "commit-and-tag-version",
 		"postrelase": "git push --follow-tags origin main",
 		"test": "vitest",
-		"test:ui": "vitest --ui",
 		"test:playwright": "playwright test"
 	},
 	"dependencies": {
