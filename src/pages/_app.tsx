@@ -1,7 +1,6 @@
-import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Layout() {
-  const data = useLoaderData();
   return (
     <>
       <div className="w-screen min-h-screen pb-52 bg-gradient-to-b from-white to-sky-200 dark:bg-sky-900">
@@ -10,26 +9,19 @@ export default function Layout() {
             <Link className="nav-button" to="/">
               Home
             </Link>
-            <Link className="nav-button" to="/cards">
-              Cards
+            <Link className="nav-button" to="/ewallet">
+              E-wallet example
+            </Link>
+            <Link className="nav-button" to="/jotai-test">
+              Jotai example
             </Link>
           </nav>
         </header>
         <main className="flex flex-col items-center min-h-screen md:mt-20 md:mb-40">
-          <Outlet context={data} />
+          <Outlet />
         </main>
-        <footer className="fixed bottom-2 right-2">
-          Copyright ©2023 Ankwallet
-        </footer>
+        <footer className="fixed bottom-2 right-2">Footer</footer>
       </div>
     </>
   );
 }
-
-export const Loader = async () => {
-  const response = await fetch("https://randomuser.me/api/");
-  const data = await response.json();
-  const { first: firstName, last: lastName } = data.results[0].name;
-  return { firstName, lastName };
-};
-

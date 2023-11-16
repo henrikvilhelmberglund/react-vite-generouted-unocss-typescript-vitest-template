@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // import { Routes } from "generouted/react-router";
-import {Routes}  from "./routes"
+import { Routes } from "./routes"
+
+// Redux
 import { Provider } from "react-redux";
 import store from "/src/redux/configureStore";
 

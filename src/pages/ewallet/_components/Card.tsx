@@ -3,7 +3,7 @@ import {
   deleteCard,
   setActiveCard,
   setAllCardsToInactive,
-} from "../../redux/ewalletSlice";
+} from "../../../redux/ewalletSlice";
 import { useOutletContext } from "react-router-dom";
 
 interface CardProps {

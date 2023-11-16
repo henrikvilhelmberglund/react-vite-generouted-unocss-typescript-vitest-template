@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
-import { createCard, updateCardPreview } from "../../redux/ewalletSlice";
+import { createCard, updateCardPreview } from "../../../redux/ewalletSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../_components/Card";
 

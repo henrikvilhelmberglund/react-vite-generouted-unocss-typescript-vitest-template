@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import Card from "../_components/Card";
-import { deleteCard } from "../../redux/ewalletSlice";
+import { deleteCard } from "../../../redux/ewalletSlice";
 import React from "react";
 
 export default function Index() {
