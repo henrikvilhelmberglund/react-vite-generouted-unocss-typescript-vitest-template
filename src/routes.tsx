@@ -39,7 +39,11 @@ const MODALS = import.meta.glob<Pick<Module, "default">>(
   { eager: true }
 );
 const ROUTES = import.meta.glob<Module>(
-  ["/src/pages/**/[\\w[-]*.{jsx,tsx}", "!**/(_app|404).*"],
+  [
+    "/src/pages/**/[\\w[-]*.{jsx,tsx}",
+    "!**/(_app|404).*",
+    "!/src/pages/**/[\\w[-]*.test.{jsx,tsx}",
+  ],
   { eager: true }
 );
 
