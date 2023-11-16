@@ -35,7 +35,7 @@ export default function Index() {
           ) : (
               <div className="flex flex-col items-center gap-4">
                 
-            <Link to="/addcard" className="btn-green">
+            <Link to="../addcard" className="btn-green">
               Add new card
             </Link>
               </div>

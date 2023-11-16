@@ -78,7 +78,7 @@ export default function Index() {
           setMessage("Success! Navigating to cards...");
           setTimeout(() => {
             setMessage("");
-            navigate("/cards");
+            navigate("../cards");
           }, 1500);
         }}
         className="mt-12 p-4 bg-white rounded-md flex flex-col gap-3"
