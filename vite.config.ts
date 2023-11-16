@@ -10,18 +10,10 @@ export default defineConfig({
   plugins: [
     UnoCSS(),
     react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }),
-    generouted({
-      source: {
-        routes: [
-          "./src/pages/**/[\\w[-]*.{jsx,tsx}",
-          "!./src/pages/**/[\\w[-]*.test.{jsx,tsx}",
-        ],
-        modals: "",
-      },
-    }),
+    generouted(),
   ],
   test: {
-    include: ["src/**/*.{test,spec}.{js,ts}"],
+    include: ["src/**/*.{test,spec}.{js,ts,jsx,tsx}"],
     environment: "jsdom",
     globals: true,
     setupFiles: "src/setupTests.ts",
