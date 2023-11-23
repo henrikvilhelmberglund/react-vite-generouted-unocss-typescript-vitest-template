@@ -14,7 +14,7 @@
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"release": "commit-and-tag-version",
-		"postrelase": "git push --follow-tags origin main",
+		"postrelease": "git push --follow-tags origin main",
 		"test": "vitest",
 		"test:playwright": "playwright test"
 	},
